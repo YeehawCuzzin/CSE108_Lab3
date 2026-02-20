@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE 108 Lab 3 Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="wrap">
+        <div class="calculator" role="application" aria-label="Calculator">
+            <input id="display" class="display" type="text" value="0" readonly aria-label="Output" />
+
+            <!-- Row 1 -->
+            <button class="btn number" data-digit="1">1</button>
+            <button class="btn number" data-digit="2">2</button>
+            <button class="btn number" data-digit="3">3</button>
+            <button class="btn op" data-op="+">+</button>
+
+            <!-- Row 2 -->
+            <button class="btn number" data-digit="4">4</button>
+            <button class="btn number" data-digit="5">5</button>
+            <button class="btn number" data-digit="6">6</button>
+            <button class="btn op" data-op="-">-</button>
+
+            <!-- Row 3 -->
+            <button class="btn number" data-digit="7">7</button>
+            <button class="btn number" data-digit="8">8</button>
+            <button class="btn number" data-digit="9">9</button>
+            <button class="btn op" data-op="*">x</button>
+
+            <!-- Row 4 -->
+            <button class="btn number zero" data-digit="0">0</button>
+            <button class="btn number" data-decimal=".">.</button>
+            <button class="btn equals" id="equals">=</button>
+            <button class="btn op" data-op="/">/</button>
+
+            <!-- Row 5 -->
+            <button class="btn clear" id="clear">C</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
